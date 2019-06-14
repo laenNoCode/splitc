@@ -30,7 +30,7 @@ int split(
     free(buffer);
     *length = currentLength;
 }
-int main(){
+int example(){
     char tmp[200];
     gets(tmp);
     char **truc;
