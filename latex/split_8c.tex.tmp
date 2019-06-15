@@ -1,0 +1,63 @@
+\hypertarget{split_8c}{}\section{split.\+c File Reference}
+\label{split_8c}\index{split.\+c@{split.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for split.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{split_8c_a901f6ac6f30d9e20ff60512766326b19}{split} (char $\ast$to\+Split, int to\+Split\+Length, char $\ast$$\ast$$\ast$return\+Array, int $\ast$length)
+\item 
+int \hyperlink{split_8c_a34b2daee0ac35c1ba46aa123e28ed0a6}{split2} (char $\ast$splitter, int splitter\+Length, char $\ast$to\+Split, int to\+Split\+Length, char $\ast$$\ast$$\ast$return\+Array, int $\ast$length)
+\item 
+int \hyperlink{split_8c_a830713455bef38fe0e15d8fbe3db20f0}{example} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{split_8c_a830713455bef38fe0e15d8fbe3db20f0}\label{split_8c_a830713455bef38fe0e15d8fbe3db20f0}} 
+\index{split.\+c@{split.\+c}!example@{example}}
+\index{example@{example}!split.\+c@{split.\+c}}
+\subsubsection{\texorpdfstring{example()}{example()}}
+{\footnotesize\ttfamily int example (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+example \mbox{\Hypertarget{split_8c_a901f6ac6f30d9e20ff60512766326b19}\label{split_8c_a901f6ac6f30d9e20ff60512766326b19}} 
+\index{split.\+c@{split.\+c}!split@{split}}
+\index{split@{split}!split.\+c@{split.\+c}}
+\subsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily int split (\begin{DoxyParamCaption}\item[{char $\ast$}]{to\+Split,  }\item[{int}]{to\+Split\+Length,  }\item[{char $\ast$$\ast$$\ast$}]{return\+Array,  }\item[{int $\ast$}]{length }\end{DoxyParamCaption})}
+
+splits the string in a new array that is malloced (dont forget to free after) 
+\begin{DoxyParams}{Parameters}
+{\em to\+Split} & \+: string to be splitted \\
+\hline
+{\em to\+Split\+Length} & \+: length of the string to be splitted \\
+\hline
+{\em return\+Array} & \+: pointer to the array that will be returned \\
+\hline
+{\em length} & \+: length of the returned array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{split_8c_a34b2daee0ac35c1ba46aa123e28ed0a6}\label{split_8c_a34b2daee0ac35c1ba46aa123e28ed0a6}} 
+\index{split.\+c@{split.\+c}!split2@{split2}}
+\index{split2@{split2}!split.\+c@{split.\+c}}
+\subsubsection{\texorpdfstring{split2()}{split2()}}
+{\footnotesize\ttfamily int split2 (\begin{DoxyParamCaption}\item[{char $\ast$}]{splitter,  }\item[{int}]{splitter\+Length,  }\item[{char $\ast$}]{to\+Split,  }\item[{int}]{to\+Split\+Length,  }\item[{char $\ast$$\ast$$\ast$}]{return\+Array,  }\item[{int $\ast$}]{length }\end{DoxyParamCaption})}
+
+splits the string in a new array that is malloced (dont forget to free after) 
+\begin{DoxyParams}{Parameters}
+{\em splitter} & \+: string on which you split \\
+\hline
+{\em splitter\+Length} & \+: length of the string \\
+\hline
+{\em to\+Split} & \+: string to be splitted \\
+\hline
+{\em to\+Split\+Length} & \+: length of the string to be splitted \\
+\hline
+{\em return\+Array} & \+: pointer to the array that will be returned \\
+\hline
+{\em length} & \+: length of the returned array \\
+\hline
+\end{DoxyParams}

@@ -2,11 +2,18 @@
 #include <string.h>
 #include <stdlib.h>
 
+/**
+ * splits the string in a new array that is malloced (dont forget to free after)
+ * @param toSplit : string to be splitted
+ * @param toSplitLength : length of the string to be splitted
+ * @param returnArray : pointer to the array that will be returned
+ * @param length : length of the returned array
+ */
 int split(
-        char* toSplit,
-        int toSplitLength,
+        char*   toSplit,
+        int     toSplitLength,
         char*** returnArray, 
-        int* length)
+        int*    length)
 {
     *length = 0;
     *returnArray = malloc(sizeof(char*));
@@ -31,13 +38,21 @@ int split(
     *length = currentLength;
 }
 
+/** splits the string in a new array that is malloced (dont forget to free after)
+* @param splitter : string on which you split
+* @param splitterLength : length of the string
+* @param toSplit : string to be splitted
+* @param toSplitLength : length of the string to be splitted
+* @param returnArray : pointer to the array that will be returned
+* @param length : length of the returned array
+*/
 int split2(
-        char* splitter,
-        int splitterLength, 
-        char* toSplit,
-        int toSplitLength,
+        char*   splitter,
+        int     splitterLength, 
+        char*   toSplit,
+        int     toSplitLength,
         char*** returnArray, 
-        int* length)
+        int*    length)
 {
     char* request = malloc(sizeof(char) * (splitterLength + 6));
     sprintf(request, "%%[^%s]%%n", splitter);
@@ -66,7 +81,9 @@ int split2(
     free(request);
     *length = currentLength;
 }
-
+/**
+ * example
+ */
 int example(){
     char tmp[200];
     gets(tmp);
